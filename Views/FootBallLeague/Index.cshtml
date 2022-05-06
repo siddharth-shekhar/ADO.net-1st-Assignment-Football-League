@@ -1,0 +1,19 @@
+﻿@model IEnumerable<football.Models.FootBallLeague>
+@using football.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="font-family:Arial">
+    <h2>Football table</h2>
+    <ul>
+        @foreach (FootBallLeague footballs in @Model)
+        {
+            <li>
+                @footballs.MatchStatus
+            </li>
+        }
+
+    </ul>
+</div>
